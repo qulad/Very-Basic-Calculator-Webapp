@@ -1,0 +1,85 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(to bottom right, #5433ff, #20bdff, #a5fecb); /*LUNADA*/
+}
+
+fieldset.calculatorExoSkeleton {
+	display: grid;
+	height: 100vh;
+	justify-content: center;
+	grid-template-columns: repeat(2, 380px);
+	border: none;
+}
+
+fieldset.calculatorExoSkeleton > * {
+	text-align: center;
+	cursor: pointer;
+	font-size: 2rem;
+	border: 1px solid white;
+	outline: none;
+	justify-content: center;
+	align-content: center;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+fieldset.calculatorExoSkeleton > button:hover,
+fieldset.calculatorExoSkeleton > select:hover,
+fieldset.calculatorExoSkeleton > input:hover {
+	background-color: rgba(255, 255, 255, 0.90);
+}
+
+fieldset.calculatorExoSkeleton > label,
+fieldset.calculatorExoSkeleton > legend {
+	text-align: left;
+	display: flex;
+	align-items: center;
+	cursor: auto;
+	user-select: none;
+}
+
+fieldset.calculatorExoSkeleton > legend {
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.spanTwo {
+	grid-column: span 2;
+}
+
+.spanTwo.output:hover {
+	background-color: rgba(0, 0, 0, 0.80);
+}
+
+.spanTwo.output {
+	border: none;
+	height: 90px, fit-content;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
+	user-select: unset;
+}
+
+.spanTwo.output.previous {
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 1.5rem;
+}
+
+.spanTwo.output.current {
+	color: white;
+	font-size: 2.5rem;
+}
+
+select {
+	appearance: none;
+}
+
+option {
+	background-color: rgba(0, 0, 0, 1.0);
+	color: rgba(255, 255, 255, 1.0);
+}
+
+input::-webkit-inner-spin-button {
+	display: none;
+}

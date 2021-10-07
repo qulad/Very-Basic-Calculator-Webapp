@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!--
+BIL209 ÖDEV 1
+
+BASİT HESAP MAKİNESİ
+
+Ahmet Ertuğrul KAYA
+200601049
+-->
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Basit Hesap Makinesi</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<fieldset class="calculatorExoSkeleton">
+		<legend>Basit Hesap Makinesi</legend>
+		<label class="spanTwo output previous" id="previous"></label>
+		<label class="spanTwo output current" id="current"></label>
+		<label>Lütfen birinci sayıyı giriniz: </label>
+		<input type="number" class="numberInputBox" id="inputOne" onkeypress="return isNumber(event)">
+		<label>Lütfen ikinci sayıyı giriniz: </label>
+		<input type="number" class="numberInputBox" id="inputTwo" onkeypress="return isNumber(event)">
+		<label>Lütfen öperatörü seçiniz:</label>
+		<select class="dropdownMenu" id="operantSelector">
+			<option class="summ" selected>+</option>
+			<option class="substrat">−</option>
+			<option class="multiply">×</option>
+			<option class="divide">÷</option>
+		</select>
+		<button class="calculateButton spanTwo" onclick="calculate()">HESAPLA</button>
+	</fieldset>	
+</body>
+
+</html>
